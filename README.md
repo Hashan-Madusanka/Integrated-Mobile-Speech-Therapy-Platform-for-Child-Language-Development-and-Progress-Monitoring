@@ -6,7 +6,7 @@ A mobile speech therapy platform for children aged 1 to 4, diagnosing and monito
 The Integrated Mobile Speech Therapy Platform for Child Language Development and Progress Monitoring aims to provide children aged 1-4 with speech difficulties—such as cleft palate, language delay, and hearing loss—with personalized, engaging, and adaptive therapy interventions. The platform integrates mobile-based interactive tools, leveraging advanced technologies like YOLO object detection and adaptive learning algorithms for real-time feedback and progressive therapy plans.
 
 
-## Repository Link - 
+## Repository Link - [View the Repository Here](https://github.com/Hashan-Madusanka/Integrated-Mobile-Speech-Therapy-Platform-for-Child-Language-Development-and-Progress-Monitoring)
 ## Research Topic - Integrated Mobile Speech Therapy Platform for Child Language Development and Progress Monitoring
 ## Project ID - 24-25J-151
 
