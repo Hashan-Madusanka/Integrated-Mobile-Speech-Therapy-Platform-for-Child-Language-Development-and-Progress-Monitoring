@@ -22,6 +22,10 @@ The project focuses on developing a mobile platform to support children aged 1 t
 
 
 # System Architectural Diagram
+![System Diagram Component 1](https://github.com/Hashan-Madusanka/Integrated-Mobile-Speech-Therapy-Platform-for-Child-Language-Development-and-Progress-Monitoring/blob/main/System%20Diagram%20Component%201.png)
+![System Diagram Component 2]()
+![System Diagram Component 3]()
+![System Diagram Component 4]()
 
 
 
