@@ -32,5 +32,25 @@ The project focuses on developing a mobile platform to support children aged 1 t
 # Dependencies
 
 #### Diagnosing, and monitoring children with speech difficulties based on the specific type of disabilities
+ 
+Algorithms/Models - YOLO8 (Object Detection)​
+Frameworks/Libraries - Flask, OpenCV, Ultralytics, NumPy​
+Technologies​ - Python, YOLO Model File, Google Colab (Data Training), RoboFlow (Data Annotation), Java(Frontend), Figma (Frontend Design), Android Studio​
+Techniques​ - Image Preprocessing, Object Detection, Error Handling, JSON API​
+Database​ - Firebase
+
+#### Suggesting Adaptive and Personalized Therapy Programs
+
+Algorithms/Models - Random Forest Classifier​
+Frameworks/Libraries - Pandas, Scikit-learn, Pickle
+Technologies​ - Flask, Google Colab, Python
+Techniques​ - Image Preprocessing, Object Detection, Error Handling, JSON API
+​Architecture​ - Monolithic Client-Server Architecture​
+Database​ - Firebase
+
+#### Engaging in child attractive Speech Development Activities
+
+
+#### Providing visual and auditory feedback of the patient and supporting communication between therapists and patients
 
 
