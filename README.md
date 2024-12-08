@@ -31,6 +31,6 @@ The project focuses on developing a mobile platform to support children aged 1 t
 
 # Dependencies
 
-#### List of Dependencies
+#### Diagnosing, and monitoring children with speech difficulties based on the specific type of disabilities
 
 
