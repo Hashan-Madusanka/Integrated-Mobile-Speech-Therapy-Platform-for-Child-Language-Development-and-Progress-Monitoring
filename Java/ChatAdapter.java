@@ -65,6 +65,8 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ChatViewHolder
             holder.messageTextView.setText(message.getMessage());
         }
     }
+    // Returns the total number of items in the chatMessages list.
+// RecyclerView uses this to know how many items to render.
     @Override
     public int getItemCount() {
         return chatMessages.size();
