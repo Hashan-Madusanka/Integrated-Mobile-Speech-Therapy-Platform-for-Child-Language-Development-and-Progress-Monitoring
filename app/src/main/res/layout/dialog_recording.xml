@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/blue"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <ImageView
+        android:id="@+id/closeButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="top|right"
+        app:srcCompat="@drawable/baseline_close_24" />
+    <ImageView
+        android:id="@+id/recordingImage"
+        android:layout_width="236dp"
+        android:layout_height="167dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/worksansbold"
+        android:contentDescription="Recording icon"
+        android:src="@drawable/ic_recording" />
+    <TextView
+        android:id="@+id/Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Recoding..."
+        android:fontFamily="@font/worksansbold"
+        android:textColor="@color/darkBlue"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Start Recording"
+            android:textSize="16dp"
+            android:fontFamily="@font/worksansbold"
+            android:textColor="#ffffff"
+            android:background="@color/darkGreen"
+            android:layout_marginEnd="8dp" />
+        <Button
+            android:id="@+id/stopButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Stop Recording"
+            android:textSize="16dp"
+            android:fontFamily="@font/worksansbold"
+            android:textColor="#ffffff"
+            android:background="@color/darkGreen" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Save Recording"
+        android:layout_gravity="center"
+        android:fontFamily="@font/worksansbold"
+        android:textSize="16dp"
+        android:textColor="#ffffff"
+        android:background="@color/darkGreen"
+        android:layout_marginTop="8dp" />
+    <TextView
+        android:id="@+id/recordpath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:fontFamily="@font/worksansbold"
+        android:textColor="@color/darkBlue"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"/>
+</LinearLayout>

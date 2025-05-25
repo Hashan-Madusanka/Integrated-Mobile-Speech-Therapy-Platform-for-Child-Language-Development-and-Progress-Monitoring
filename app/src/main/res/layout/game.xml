@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".GameActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/profile_section"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/rounded_corners3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <TextView
+            android:id="@+id/us"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/lemonada"
+            android:text="Speech\nDevelopment\nGames"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.074"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="158dp"
+            android:layout_height="140dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/card3" />
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="56dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/home" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Scrollable Content -->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollable_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/profile_section"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+    <!-- Inner Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+    <!-- Main Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/main1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="20dp"
+        android:backgroundTint="@color/lightOrange"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_section">
+
+        <!-- Content Inside Main Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!-- Title TextView -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Language Delay Games"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/worksansbold" />
+
+            <!-- Inner Cards (Card1 and Card2) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:weightSum="2"
+                android:layout_marginTop="10dp">
+
+                <!-- Card1 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="5dp"
+                    app:cardCornerRadius="20dp"
+                    android:backgroundTint="@color/green">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Spell Word"
+                            android:textColor="@color/darkGreen"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/worksansbold"
+                            android:layout_gravity="center_horizontal" />
+                        <TextView
+                            android:id="@+id/scoreTextView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sinhala score: 0"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/black"
+                            android:layout_gravity="left"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/worksansbold" />
+                        <ProgressBar
+                            android:id="@+id/progressBar1"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:progress="0"
+                            android:progressTint="@color/darkGreen"
+                            android:max="100" />
+                        <TextView
+                            android:id="@+id/scoreTextView1En"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="English score: 0"
+                            android:textColor="@color/black"
+                            android:layout_gravity="left"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/worksansbold" />
+                        <ProgressBar
+                            android:id="@+id/progressBar1En"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:progress="0"
+                            android:progressTint="@color/darkGreen"
+                            android:max="100" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Card2 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="5dp"
+                    app:cardCornerRadius="20dp"
+                    android:backgroundTint="@color/green">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sing Song"
+                            android:textColor="@color/Orange"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/worksansbold"
+                            android:layout_gravity="center_horizontal" />
+
+                        <TextView
+                            android:id="@+id/scoreTextView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sinhala score: 0"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/black"
+                            android:layout_gravity="left"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/worksansbold" />
+                        <ProgressBar
+                            android:id="@+id/progressBar2"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:progress="0"
+                            android:progressTint="@color/darkGreen"
+                            android:max="100" />
+                        <TextView
+                            android:id="@+id/scoreTextView2En"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="English score: 0"
+                            android:textColor="@color/black"
+                            android:layout_gravity="left"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/worksansbold" />
+                        <ProgressBar
+                            android:id="@+id/progressBar2En"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:progress="0"
+                            android:progressTint="@color/darkGreen"
+                            android:max="100" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <!-- Main Card 2-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/main2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="20dp"
+        android:backgroundTint="@color/pink"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main1">
+
+        <!-- Content Inside Main Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!-- Title TextView -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hearing Loss Games"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/worksansbold" />
+
+            <!-- Inner Cards (Card1 and Card2) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:weightSum="2"
+                android:layout_marginTop="10dp">
+
+                <!-- Card3 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="5dp"
+                    app:cardCornerRadius="20dp"
+                    android:backgroundTint="@color/darkred">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hear volume"
+                            android:textColor="@color/red"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/worksansbold"
+                            android:layout_gravity="center_horizontal" />
+
+                        <ProgressBar
+                            android:id="@+id/progressBar3"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="10dp"
+                            android:progress="0"
+                            android:progressTint="@color/darkGreen"
+                            android:max="100" />
+
+                        <TextView
+                            android:id="@+id/scoreTextView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Score: 0"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/worksansbold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Card4 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="5dp"
+                    app:cardCornerRadius="20dp"
+                    android:backgroundTint="@color/darkred">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Listen story"
+                            android:textColor="@color/red"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/worksansbold"
+                            android:layout_gravity="center_horizontal" />
+                        <TextView
+                            android:id="@+id/scoreTextView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sinhala score: 0"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/black"
+                            android:layout_gravity="left"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/worksansbold" />
+                        <ProgressBar
+                            android:id="@+id/progressBar4"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:progress="0"
+                            android:progressTint="@color/Orange"
+                            android:max="100" />
+                        <TextView
+                            android:id="@+id/scoreTextView4En"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="English score: 0"
+                            android:textColor="@color/black"
+                            android:layout_gravity="left"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/worksansbold" />
+                        <ProgressBar
+                            android:id="@+id/progressBar4En"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:progress="0"
+                            android:progressTint="@color/Orange"
+                            android:max="100" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <!-- Main Card3 -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="20dp"
+        android:backgroundTint="@color/blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main2">
+
+        <!-- Content Inside Main Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!-- Title TextView -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cleft Palate Games"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/worksansbold" />
+
+            <!-- Inner Cards (Card1 and Card2) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:weightSum="2"
+                android:layout_marginTop="10dp">
+
+                <!-- Card5 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="5dp"
+                    app:cardCornerRadius="20dp"
+                    android:backgroundTint="@color/darkbrown">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Try sound"
+                            android:textColor="@color/brown"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/worksansbold"
+                            android:layout_gravity="center_horizontal" />
+
+                        <ProgressBar
+                            android:id="@+id/progressBar5"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="10dp"
+                            android:progress="0"
+                            android:progressTint="@color/darkGreen"
+                            android:max="100" />
+
+                        <TextView
+                            android:id="@+id/scoreTextView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Score: 0"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/worksansbold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Card2 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="5dp"
+                    app:cardCornerRadius="20dp"
+                    android:backgroundTint="@color/darkbrown">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Catch sound"
+                            android:textColor="@color/brown"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/worksansbold"
+                            android:layout_gravity="center_horizontal" />
+
+                        <ProgressBar
+                            android:id="@+id/progressBar6"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="10dp"
+                            android:progress="0"
+                            android:progressTint="@color/Orange"
+                            android:max="100" />
+
+                        <TextView
+                            android:id="@+id/scoreTextView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Score: 0"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/worksansbold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

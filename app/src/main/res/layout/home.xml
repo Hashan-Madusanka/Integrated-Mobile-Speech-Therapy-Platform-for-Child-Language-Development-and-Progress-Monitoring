@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".HomeActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/profile_section"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@drawable/rounded_corners"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <ImageView
+            android:id="@+id/logout"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/logout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/us"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/lemonada"
+            android:text="Speech Therapy"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.072"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/worksanssemibold"
+            android:text="provide personalized, engaging, and adaptive therapy "
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/us" />
+
+        <Switch
+            android:id="@+id/premium_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:checked="false"
+            android:fontFamily="@font/worksansbold"
+            android:text="Premium User"
+            android:textColor="@color/brown"
+            android:textSize="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6"
+            android:thumbTint="@color/green"
+            android:trackTint="@color/red" />
+
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="81dp"
+            android:layout_height="72dp"
+            android:contentDescription="Profile Image"
+            android:src="@drawable/profile"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.951"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="154dp"
+            android:layout_height="155dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/home0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Scrollable content section -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/profile_section"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <!-- Scrollable content here -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/green">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="175dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        app:srcCompat="@drawable/card1" />
+                    <TextView
+                        android:id="@+id/overlay_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/worksansbold"
+                        android:gravity="top"
+                        android:padding="15dp"
+                        android:text="Diseases\nIdentification"
+                        android:textColor="@color/darkGreen"
+                        android:textSize="40sp" />
+                    <Button
+                        android:id="@+id/button1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_gravity="right|bottom"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/worksansbold"
+                        android:text="Get Start"
+                        android:textSize="20dp" />
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/yellow">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/overlay_text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/worksansbold"
+                        android:gravity="top"
+                        android:padding="15dp"
+                        android:text="Suggesting\nTherapies"
+                        android:textColor="@color/darkYellow"
+                        android:textSize="40sp" />
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="175dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        app:srcCompat="@drawable/ca2" />
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_gravity="left|bottom"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/worksansbold"
+                        android:text="Get Start"
+                        android:textSize="20dp" />
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card3"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/blue">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="175dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        app:srcCompat="@drawable/card3" />
+                    <TextView
+                        android:id="@+id/overlay_text3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/worksansbold"
+                        android:gravity="top"
+                        android:padding="15dp"
+                        android:text="Speech\nDevelopment "
+                        android:textColor="@color/darkBlue"
+                        android:textSize="40sp" />
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_gravity="right|bottom"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/worksansbold"
+                        android:text="Get Start"
+                        android:textSize="20dp" />
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card4"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/pink">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/overlay_text4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/worksansbold"
+                        android:gravity="top"
+                        android:padding="15dp"
+                        android:text="Therapy\nReport"
+                        android:textColor="@color/darkPink"
+                        android:textSize="40sp" />
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="175dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        app:srcCompat="@drawable/ca4" />
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_gravity="left|bottom"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/worksansbold"
+                        android:text="Get Start"
+                        android:textSize="20dp" />
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

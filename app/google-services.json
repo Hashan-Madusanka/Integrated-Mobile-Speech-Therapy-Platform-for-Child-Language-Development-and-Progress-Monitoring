@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1070357869733",
+    "project_id": "speech-therapy-2d54a",
+    "storage_bucket": "speech-therapy-2d54a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1070357869733:android:6b90ac3f88fa006ca4c94c",
+        "android_client_info": {
+          "package_name": "com.example.speechtherapy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-46gS39Rq7j3iJWS54kQKYsEuW4-xQzM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

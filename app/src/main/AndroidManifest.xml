@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SpeechTherapy"
+        tools:targetApi="31">
+        <activity
+            android:name=".ProgressTrackingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EnglishSong2_reading"
+            android:exported="false" />
+        <activity
+            android:name=".EnglishSong1_reading"
+            android:exported="false" />
+        <activity
+            android:name=".EnglishSong2"
+            android:exported="false" />
+        <activity
+            android:name=".EnglishSong1"
+            android:exported="false" />
+        <activity
+            android:name=".EnglishSpeech1"
+            android:exported="false" />
+        <activity
+            android:name=".EnglishSpeech2"
+            android:exported="false" />
+        <activity
+            android:name=".EnglishSpeech3"
+            android:exported="false" />
+        <activity
+            android:name=".EnglishSpeech4"
+            android:exported="false" />
+        <activity
+            android:name=".EnglishSpeech5"
+            android:exported="false" />
+        <activity
+            android:name=".EnglishSpeech6"
+            android:exported="false" />
+        <activity
+            android:name=".EnglishStoryPart5"
+            android:exported="false" />
+        <activity
+            android:name=".EnglishStoryPart4"
+            android:exported="false" />
+        <activity
+            android:name=".EnglishStoryPart3"
+            android:exported="false" />
+        <activity
+            android:name=".EnglishStoryPart2"
+            android:exported="false" />
+        <activity
+            android:name=".EnglishStoryPart1"
+            android:exported="false" />
+        <activity
+            android:name=".Deseases1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".VideoCallActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Sound5Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Sound4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Sound3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Sound2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Sound1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Spell5Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Spell4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Spell3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Spell2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Spell1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".StoryPart5Activity"
+            android:exported="false" />
+        <activity
+            android:name=".StoryPart4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".StoryPart3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".StoryPart2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".StoryPart1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".VolumeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Speech6Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Speech5Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Speech4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Song2_readingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Song2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Song1_readingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Song1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".GameActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TherapistListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserChatListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TherapistChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ThreapyReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GenerateReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TherapyPlanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HearingResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LanguageResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TherapyQuestion"
+            android:exported="false" />
+        <activity
+            android:name=".LanguageDelayQuestion"
+            android:exported="false" />
+        <activity
+            android:name=".Speech3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Speech2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Speech1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".CleftImageUploadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterTherapistActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterKidActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.canhub.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.speechtherapy"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.speechtherapy.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

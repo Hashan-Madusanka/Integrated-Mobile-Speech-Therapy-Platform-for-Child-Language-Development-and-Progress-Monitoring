@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Speech Therapy</string>
+    
+    <!-- Progress Tracking -->
+    <string-array name="timeframe_options">
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+    </string-array>
+</resources>

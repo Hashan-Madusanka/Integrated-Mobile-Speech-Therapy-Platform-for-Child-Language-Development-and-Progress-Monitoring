@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="lightOrange">#FFE4AB</color>
+    <color name="Orange">#E5AA2C</color>
+    <color name="green">#E5FFC4</color>
+    <color name="darkGreen">#3A850E</color>
+    <color name="yellow">#FFFEC4</color>
+    <color name="darkYellow">#A4A21C</color>
+    <color name="blue">#C4E6FF</color>
+    <color name="darkBlue">#2A8ABE</color>
+    <color name="pink">#EBC4FF</color>
+    <color name="darkPink">#B62A98</color>
+    <color name="red">#900C3F </color>
+    <color name="darkred">#F88379</color>
+    <color name="brown">#6E260E </color>
+    <color name="darkbrown">#E1C16E</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="card_background5">#EBC4FF</color>
+    <color name="card_background4">#C4E6FF</color>
+    <color name="card_background3">#E5FFC4</color>
+    <color name="card_background2">#FFFEC4</color>
+    <color name="card_background1">#FFE4AB</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_700">#018786</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_200">#BB86FC</color>
+    <color name="link_color">#0000FF</color> <!-- Blue link color -->
+    <color name="orange">#FF9800</color> <!-- Orange for charts -->
+</resources>
