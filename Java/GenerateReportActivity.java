@@ -1,5 +1,5 @@
 package com.example.speechtherapy;
-
+// Import statements for Android components and libraries
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
