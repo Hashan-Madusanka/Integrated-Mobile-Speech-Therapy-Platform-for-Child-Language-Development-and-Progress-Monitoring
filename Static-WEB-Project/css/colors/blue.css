@@ -1,0 +1,438 @@
+/* Blue Version CSS */
+
+a:link,
+a:visited,
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #000000;
+}
+
+.btn-pri {
+  display: inline-block; /* Ensures button is treated as a full-width block */
+  padding: 1px 10px;
+  color: #000000 !important;
+  background-color: #92aff6;
+  border: 1px solid;
+  border-color: #000000;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn-pri:hover {
+  background-color: #0a1579;
+  color: #ffffff !important;
+}
+
+.navbar-brand {
+  /*background: url("../../images/logo.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);*/
+}
+
+/* Home Slider */
+#home-slider .caption h1 strong {
+  color: #000000;
+}
+
+.left-control:hover,
+.right-control:hover {
+  background-color: #000000;
+}
+
+.learn-more {
+  border: 2px solid #0f110f;
+  border-radius: 20px;
+}
+.learn-more:hover {
+  background: #0a1579;
+}
+
+.left-control,
+.right-control {
+  border: 1px solid #000000;
+}
+/* End Home Slider */
+
+/* Navbar */
+
+/* Link Color */
+.navbar-inverse {
+  border-color: #0a1579;
+}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #0a1579;
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+  color: #0a1579;
+}
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #0a1579;
+}
+.dropdown-menu > li > a {
+  color: #0a1579;
+}
+.navbar-inverse .navbar-nav > .dropdown > a:hover .caret {
+  border-top-color: #0a1579;
+}
+
+.navbar-toggle {
+  border: transparent;
+  background-color: #000000;
+}
+
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+  background-color: #000000;
+}
+
+/* End Navbar */
+
+/* Loader */
+.spinner > div {
+  background: #000000;
+}
+/*  End Loader*/
+
+/* Titles & Color */
+.section-title h1 span {
+  background-color: #0a1579;
+  border-radius: 10px;
+}
+
+.btn {
+  border: 1px solid #0b0c0b;
+  background-color: #080808;
+}
+
+a.btn {
+  color: #fff;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.btn a {
+  color: #fff;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.btn:hover a {
+  color: #000000;
+}
+
+.btn:hover {
+  border: 1px solid #000000;
+  color: #000000;
+}
+
+.btn-inverse {
+  color: #000000;
+  border: 1px solid #000000;
+}
+
+a.btn-inverse {
+  color: #000000;
+}
+
+.btn-inverse a {
+  color: #000000;
+}
+
+.btn-inverse:hover {
+  color: #fff;
+  background-color: #000000;
+}
+
+.btn-inverse:hover a {
+  color: #000000;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+a.btn-inverse:hover {
+  color: #000000;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.btn-inverse:hover a {
+  color: #fff;
+}
+
+a.btn-inverse:hover {
+  color: #fff;
+}
+
+.btn-one {
+  background: none repeat scroll 0 0 #000000;
+  border: 1px solid #000000;
+}
+
+.btn-one:hover {
+  border: 1px solid #000000;
+  color: #000000 !important;
+}
+
+.hovicon.effect-1 {
+  background: #92aff6;
+}
+
+.hovicon.effect-1:after {
+  box-shadow: 0 0 0 4px #000000;
+}
+
+/* Effect 1a */
+.hovicon.effect-1.sub-a:hover {
+  background: #0a1579;
+}
+
+.main-color {
+  color: #ffffff;
+}
+
+.white-color {
+  color: #fff;
+}
+
+.text-color {
+  background: none repeat scroll 0 0 #171a18;
+}
+
+.dporcaps-negative {
+  background: none repeat scroll 0 0 #0b0e0c;
+}
+
+.dporcaps {
+  color: #000000;
+}
+
+.blockqoute-style-2 {
+  border-left: 5px solid #141614;
+}
+
+cite {
+  color: #000000;
+}
+
+/* End Titles & Color */
+
+/* Facts */
+.number p:first-letter {
+  color: #131613;
+}
+/* End Facts */
+
+/* Team Member */
+.team-member-holder:hover {
+  border-color: #000000;
+}
+
+.img-overlay {
+  background: #000000;
+}
+
+.view-profile {
+  color: #000000;
+}
+
+.team-member-social-list-item {
+  color: #000000;
+}
+/* End Team Member */
+
+/* Works */
+#filters li span {
+  border: 1px solid #000000;
+  color: #000000;
+}
+
+#filters li span.active,
+#filters li span:hover {
+  background: #000000;
+}
+/* End Works */
+
+/* Partners */
+.partners-img:hover img {
+  border-color: #000000;
+}
+/* End Partners */
+
+/* Pricing */
+.single-table h4:first-letter {
+  color: #000000;
+}
+
+.price-icon {
+  background-color: #000000;
+}
+
+span.price {
+  color: #000000;
+}
+
+.single-table .btn-price,
+.sign_form input[type="submit"] {
+  background: none repeat scroll 0 0 #000000;
+  border: 1px solid #000000;
+}
+
+.single-table .btn-price:hover {
+  border: 1px solid #000000;
+  color: #000000;
+}
+
+.single-table.featured .price-icon,
+.single-table.featured .btn-price {
+  color: #000000;
+}
+
+.single-table.featured {
+  background-color: #000000;
+}
+
+.single-table.featured .price {
+  background-color: #000000;
+}
+/* End Pricing */
+
+/* Clients */
+.clients h5 {
+  color: #000000;
+}
+
+.carousel-indicators .active {
+  background-color: #000000;
+  border-color: #000000;
+}
+
+.carousel-indicators li {
+  border-color: #000000;
+}
+/* End Clients */
+
+/* Single Post Blog */
+
+.widget.category ul li {
+  color: #000000;
+}
+
+.widget.tags-cloud a:hover {
+  border: 1px solid #000000;
+  color: #000000;
+}
+
+.tags a:hover {
+  border: 1px solid #000000;
+  color: #000000;
+}
+
+.pager li > a:hover,
+.pager li > a:focus {
+  border: 1px solid #000000;
+}
+
+/* End Single Post Blog */
+
+/* News */
+.post-date {
+  background-color: #000000;
+}
+
+.entry-title a:hover {
+  color: #000000;
+}
+/* End News */
+
+/* Tweet */
+#twitter-carousel .item a {
+  color: #000000;
+}
+
+.twitter-icon .fa-twitter:after {
+  border-color: #000000 transparent transparent;
+}
+
+.twitter-icon .fa-twitter,
+.twitter-left-control:hover,
+.twitter-right-control:hover {
+  background-color: #000000;
+}
+
+.sign_form input[type="submit"]:hover {
+  color: #000000;
+}
+/* End Tweet */
+
+/* Footer */
+.bottom-footer {
+  border-top: 7px solid #090f49;
+}
+
+.bottom-footer-left p a {
+  color: #000000;
+}
+
+.bottom-social-icons li a i {
+  background-color: #000000;
+  border: 1px solid #000000;
+}
+
+.bottom-social-icons li a i:hover {
+  color: #000000;
+}
+
+/* End Footer */
+
+/* Contacts */
+.contact_form i {
+  color: #0a1579;
+}
+
+.contact_form input[type="submit"] {
+  background: #0a1579;
+  border: 1px solid #ffffff;
+  font-weight: bold;
+}
+
+.contact_form input[type="submit"]:hover {
+  color: #000000;
+}
+/* End Contacts */
+
+/* To Top */
+a.scroll-up {
+  background: none repeat scroll 0 0 #0a1579;
+}
+a.scroll-up i {
+  color: #fff;
+}
+
+a.scroll-up:hover i {
+  color: #000000;
+}
+
+a.scroll-up:hover {
+  color: #000000;
+  border-color: #000000;
+}
+/* End To Top */
